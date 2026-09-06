@@ -34,7 +34,7 @@ client = OpenAI(
 
 # TODO: replace with the real model id from your provider once you have it.
 # This is just a placeholder so the app can be tested end-to-end.
-MODEL_NAME = "gpt-4o-mini"
+MODEL_NAME = "claude-fable-5"
 
 
 # -----------------------------
