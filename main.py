@@ -1,6 +1,6 @@
 import base64
 from typing import Optional
-
+import os
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
@@ -25,8 +25,7 @@ app.add_middleware(
 # -----------------------------
 
 BASE_URL = "https://api.experientiallabs.ai/v1"
-API_KEY = "*****************"
-
+API_KEY = os.environ["EXPERIENTIAL_API_KEY"]
 client = OpenAI(
     base_url=BASE_URL,
     api_key=API_KEY,
